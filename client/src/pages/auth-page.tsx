@@ -227,13 +227,17 @@ function RegisterForm() {
 
   const onSubmit = async (data: any) => {
     try {
+      console.log('Attempting registration with data:', { username: data.username });
+      
       await registerMutation.mutateAsync(data, {
         onSuccess: () => {
+          console.log('Registration successful');
           sessionStorage.setItem('isNewRegistration', 'true');
           playSoundIfEnabled('success');
         },
         onError: (error: any) => {
-          const errorMessage = error.response?.data?.message || "Registration failed";
+          console.error('Registration error details:', error);
+          const errorMessage = error.message || error.response?.data?.message || "Registration failed";
           form.setError('root', { message: errorMessage });
           playSoundIfEnabled('error');
         }
