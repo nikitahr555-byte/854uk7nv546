@@ -82,5 +82,61 @@
     "description": "Комиссия за перевод (0.00000208 BTC)",
     "fromCardNumber": "4111691748414940",
     "toCardNumber": "REGULATOR"
+  },
+  {
+    "id": 7,
+    "fromCardId": 5,
+    "toCardId": 6,
+    "amount": "50000",
+    "convertedAmount": "2094643.1",
+    "type": "transfer",
+    "wallet": null,
+    "status": "completed",
+    "createdAt": "2025-10-24T13:55:10.304Z",
+    "description": "Перевод 50000.00 USD → 2094643.10 UAH (курс: 41.89)",
+    "fromCardNumber": "4112579166439031",
+    "toCardNumber": "4113487975507205"
+  },
+  {
+    "id": 8,
+    "fromCardId": 5,
+    "toCardId": 2,
+    "amount": "500",
+    "convertedAmount": "0.004517079075986304",
+    "type": "commission",
+    "wallet": null,
+    "status": "completed",
+    "createdAt": "2025-10-24T13:55:10.750Z",
+    "description": "Комиссия за перевод (0.00451708 BTC)",
+    "fromCardNumber": "4112579166439031",
+    "toCardNumber": "REGULATOR"
+  },
+  {
+    "id": 9,
+    "fromCardId": 1,
+    "toCardId": 4,
+    "amount": "7598455",
+    "convertedAmount": "7598455",
+    "type": "crypto_transfer",
+    "wallet": "1HzejqNt5F48GwPqdRhqbjCtojdFTwurLW",
+    "status": "completed",
+    "createdAt": "2025-10-24T13:57:39.324Z",
+    "description": "Отправка 7598455.00000000 BTC на адрес 1HzejqNt5F48GwPqdRhqbjCtojdFTwurLW (внутренний перевод)",
+    "fromCardNumber": "4111956776370092",
+    "toCardNumber": "4111691748414940"
+  },
+  {
+    "id": 10,
+    "fromCardId": 1,
+    "toCardId": 2,
+    "amount": "75984.55",
+    "convertedAmount": "75984.55",
+    "type": "commission",
+    "wallet": null,
+    "status": "completed",
+    "createdAt": "2025-10-24T13:57:39.769Z",
+    "description": "Комиссия за перевод BTC (75984.55000000 BTC)",
+    "fromCardNumber": "4111956776370092",
+    "toCardNumber": "REGULATOR"
   }
 ]
